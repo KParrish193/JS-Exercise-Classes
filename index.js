@@ -58,7 +58,6 @@ class Person {
     toString () {
       return `${this.name}, ${this.age}`
     }
-
 }
 
 /*
@@ -112,7 +111,14 @@ class Car {
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
-
+  constructor(lamAtt) {
+    this.name = lamAtt.name;
+    this.age = lamAtt.age;
+    this.location = lamAtt.location;
+  }
+  speak() {
+    return `Hello my name is ${this.name}, I am from ${this.location}`;
+  }
 }
 
 /*
